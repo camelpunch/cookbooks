@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: git
-# Recipe:: default
+# Cookbook Name:: ohai
+# Attribute:: default
 #
-# Copyright 2008-2009, Opscode, Inc.
+# Copyright 2010, Opscode, Inc
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,10 +15,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-case node[:platform]
-when "debian", "ubuntu"
-  package "git-core"
-else 
-  package "git"
-end
+# FHS location would be /var/lib/chef/ohai_plugins or similar.
+default[:ohai][:plugin_path] = "/etc/chef/ohai_plugins"
