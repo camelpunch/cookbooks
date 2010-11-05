@@ -1,20 +1,40 @@
-= DESCRIPTION:
+Description
+===========
 
-Installs Sun Java.
+Installs and configures Apache Ant & Ivy
 
-= REQUIREMENTS:
+Requirements
+============
 
-Platform: Ubuntu, Debian.
+Platform: 
 
-Enable the 'multiverse' repository on Ubuntu, 'non-free' on Debian, or edit the default recipe to point at the Java package for your platform.
+* Debian, Ubuntu, CentOS, Red Hat, Fedora
 
-= USAGE:
+The following Opscode cookbooks are dependencies:
 
-Simply include the recipe where you want Java installed. Note the respository requirement above to get the right package. On Debian and Ubuntu systems, the recipe will preseed the package and update java alternaties.
+* java
+* jpackage
 
-= LICENSE and AUTHOR:
+Attributes
+==========
 
-Copyright 2008-2010, Opscode, Inc.
+Usage
+=====
+
+Simply include the recipe where you want Apache Ant & Ivy installed.
+
+TODO
+====
+
+* plugin support
+* global config template - /etc/ant/ant.conf
+
+License and Author
+==================
+
+Author:: Seth Chisamore (<schisamo@opscode.com>)
+
+Copyright 2010, Opscode, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -27,3 +47,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
